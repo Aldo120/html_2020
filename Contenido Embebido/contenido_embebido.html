@@ -1,0 +1,125 @@
+<html lang="esp-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenido Embebido</title>
+    <style>
+        img {
+            max-width: 100%;
+            width: 15 0px;
+        }
+        video {
+            max-width: 100%;
+        }
+    </style>
+</head>
+ 
+<!--
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el 
+        dispositivo y los píxeles que tenemos disponibles para "pintar" contenido.
+
+    DPR = píxeles reales / píxeles disponibles. 
+-->
+
+<body>
+    <h1>Contenido Embebido</h1>
+    <div>
+        <h2>PGN</h2>
+        <img src="/Contenido Embebido/assets/images/bird-1232416_640.png" alt="Pajarito azul">
+        <hr>
+    </div>
+
+    <div>
+        <h2>JPG</h2>
+        <img src="/Contenido Embebido/assets/images/F100029540.jpg" alt="Borrego">
+        <hr>
+    </div>
+
+    <div>
+        <h2>GIF</h2>
+        <img src="/Contenido Embebido/assets/images/giphy.gif" alt="Sushi">
+        <hr>
+    </div>
+
+    <div>
+        <h2>SVG</h2>
+        <img src="/Contenido Embebido/assets/images/facebook.svg" alt="Facebook Logo">
+        <hr>
+    </div>
+    
+    <div>
+        <h2>DPR</h2>
+        <img src="/Contenido Embebido/assets/images/F100029540.webp" width="300" alt="Borrego">
+        <hr>
+    </div> 
+
+    <div>
+        <h2>Decirle al ordenador que cargue una imagen dependiendo del dispositivo con el atributo SRCSET</h2>
+            <img srcset="/Contenido Embebido/assets/images/F100029540.webp,
+                        /Contenido Embebido/assets/images/facebook.svg 2x" 
+                        src="/Contenido Embebido/assets/images/facebook.jpg" alt="Imagen de portada"> 
+        <hr>
+    </div>
+
+    <div>
+        <h2>Etiqueta Picture</h2>
+            <picture>
+                <!-- <source srcset="
+                    /Contenido Embebido/assets/images/F100029540.webp,
+                    /Contenido Embebido/assets/images/facebook.svg"> -->
+                    <source srcset="/Contenido Embebido/assets/images/F100029540.webp" media="(max-width:1200px)">
+                    <img src="/Contenido Embebido/assets/images/facebook.jpg" alt="Imagen Portada">
+            </picture>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Etiqueta audio</h2>
+        <audio src="/Contenido Embebido/assets/audio/Red Swan.mp3" controls autoplay muted loop></audio>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Etiqueta video</h2>
+        <video src="/Contenido Embebido/assets/video/Red Swan.mp4" controls muted loop poster="/Contenido Embebido/assets/images/RedSwan.JPG"></video>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Etiqueta Iframes</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r1XE8ON8fos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Etiqueta figure</h2>
+        <h3>Gatos</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Nam, harum blanditiis corporis,
+             adipisci facere molestiae quibusdam explicabo esse veniam officiis enim placeat distinctio voluptatem numquam at repellat cupiditate unde consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Sapiente aperiam repellendus, consectetur mollitia asperiores ex error molestiae corrupti eaque modi numquam expedita ea officiis,
+             voluptates id odit quibusdam, earum veniam.
+        </p>
+        <figure>
+            <img src="https://i.pinimg.com/564x/1a/1f/2f/1a1f2fcd9475d9ca8d5c7ea3a526ad3d.jpg" alt="gatito">
+            <figcaption>Gatito Kawaii</figcaption>
+        </figure>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Nam, harum blanditiis corporis,
+             adipisci facere molestiae quibusdam explicabo esse veniam officiis enim placeat distinctio voluptatem numquam at repellat cupiditate unde consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Sapiente aperiam repellendus, consectetur mollitia asperiores ex error molestiae corrupti eaque modi numquam expedita ea officiis,
+             voluptates id odit quibusdam, earum veniam.
+        </p>
+        <hr>
+    </div>
+    
+</body>
+</html>      

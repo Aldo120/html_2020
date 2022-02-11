@@ -1,0 +1,91 @@
+<html lang="esp-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos de los Fromularios</title>
+</head>
+
+<!--
+    placeholder -> Da una pista de lo que el usuario tiene que 
+    introducir.
+    required -> Hace que un campo sea obligatorio.
+    readonly -> Hace que un campo sea de solo lectura.
+    disabled -> Desactiva el campo, no se podrá escribir en el 
+    autofocus.
+    min - max -> Establece el minímo y máximo de un campo numérico.
+    maxlenght - minlenght -> Establece el mínimo y máximo de 
+    caracteres de un campo de texto.
+    selected -> Equivale a checked en los select, sirve para
+    establecer una opción por defecto.
+    autofocus -> Para poner el foco por defecto al cargar el 
+    formulario.
+   
+-->
+
+<body>
+    <div>
+        <h1>Atributos de los Formularios</h1>
+        <h2>PlaceHolder</h2>
+        <form>
+            <div>
+                <input type="text" placeholder="Inptroduce tu nombre">
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                <h2>Required</h2>
+                <input type="text" placeholder="Inptroduce tu nombre" required>
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                <h2>ReadOnly</h2>
+                <input type="text" value="Hola" readonly>
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                <h2>Disabled</h2>
+                <input type="text" value="Hola" disabled>
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                <h2>Min - Max</h2>
+                <input type="number" min="5" max="10">
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                 <h2>MinLenght - MaxLenght</h2>
+                 <input type="text" minlength="3" maxlength="5" required>
+                 <input type="submit">
+                 <hr>
+            </div>
+
+            <div>
+                <h2>Selected</h2>
+                <select name="numbers">
+                    <option value="one">One</option>
+                    <option value="two" selected>Two</option>
+                    <option value="three">Three</option>
+                </select>
+                <input type="submit">
+                <hr>
+            </div>
+
+            <div>
+                <h2>AutoFocus</h2>
+                <input type="text" placeholder="Soy el autofocus" autofocus>
+                <input type="submit">
+                <hr>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
